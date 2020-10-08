@@ -67,6 +67,120 @@ function publicButton() {
     }
 }
 
+function validateLPU() {
+    if ( document.getElementById('large').checked == true && document.getElementById('public').checked == true ) {
+        let largePub = document.getElementsByClassName('largePublic');
+        for ( let i = 0; i < largePub.length; i++) {
+            largePub[i].style.display = 'block'
+        }
+
+        let others = document.querySelectorAll('.smallPrivate, .smallPublic, .largePrivate');
+        for ( let i = 0; i < others.length; i++) {
+            others[i].style.display = 'none'
+        }
+    }
+}
+
+function validateLPR() {
+    if ( document.getElementById('large').checked == true && document.getElementById('private').checked == true ) {
+        let largePri = document.getElementsByClassName('largePrivate');
+        for ( let i = 0; i < largePri.length; i++) {
+            largePri[i].style.display = 'block'
+        }
+
+        let others = document.querySelectorAll('.smallPrivate, .smallPublic, .largePublic');
+        for ( let i = 0; i < others.length; i++) {
+            others[i].style.display = 'none'
+        }
+
+    }
+}
+
+function validateSPU() {
+    if ( document.getElementById('small').checked == true && document.getElementById('public').checked == true ) {
+        let smallPub = document.getElementsByClassName('smallPublic');
+        for ( let i = 0; i < smallPub.length; i++) {
+            smallPub[i].style.display = 'block'
+        }
+
+        let others = document.querySelectorAll('.smallPrivate, .largePrivate, .largePublic');
+        for ( let i = 0; i < others.length; i++) {
+            others[i].style.display = 'none'
+        }
+    }
+}
+
+function validateSPR() {
+    if ( document.getElementById('small').checked == true && document.getElementById('private').checked == true ) {
+        let smallPri = document.getElementsByClassName('smallPrivate');
+        for ( let i = 0; i < smallPri.length; i++) {
+            smallPri[i].style.display = 'block'
+        }
+
+        let others = document.querySelectorAll('.smallPublic, .largePrivate, .largePublic');
+        for ( let i = 0; i < others.length; i++) {
+            others[i].style.display = 'none'
+        }
+    }
+}
+
+function validateSPRLA() {
+    if ( document.getElementById('small').checked == true && document.getElementById('private').checked == true && document.getElementById('liberalArts').checked == true) {
+        let smallLib = document.getElementsByClassName('smallLiberal');
+        for ( let i = 0; i < smallLib.length; i++) {
+            smallLib[i].style.display = 'block'
+        }
+
+        let others = document.querySelectorAll('.largeLiberal, .smallReligous, .largeReligous');
+        for ( let i = 0; i < others.length; i++) {
+            others[i].style.display = 'none'
+        }
+    }
+}
+
+function validateSPRRL() {
+    if ( document.getElementById('small').checked == true && document.getElementById('private').checked == true && document.getElementById('religous').checked == true) {
+        let smallRel = document.getElementsByClassName('smallReligous');
+        for ( let i = 0; i < smallRel.length; i++) {
+            smallRel[i].style.display = 'block'
+        }
+
+        let others = document.querySelectorAll('.largeLiberal, .smallLiberal, .largeReligous');
+        for ( let i = 0; i < others.length; i++) {
+            others[i].style.display = 'none'
+        }
+    }
+}
+
+function validateLPRLA() {
+    if ( document.getElementById('large').checked == true && document.getElementById('private').checked == true && document.getElementById('liberalArts').checked == true) {
+        let largeLib = document.getElementsByClassName('largeLiberal');
+        for ( let i = 0; i < largeLib.length; i++) {
+            largeLib[i].style.display = 'block'
+        }
+
+        let others = document.querySelectorAll('.smallReligous, .smallLiberal, .largeReligous');
+        for ( let i = 0; i < others.length; i++) {
+            others[i].style.display = 'none'
+        }
+    }
+}
+
+function validateLPRRL() {
+    if ( document.getElementById('large').checked == true && document.getElementById('private').checked == true && document.getElementById('religous').checked == true) {
+        let largeRel = document.getElementsByClassName('largeReligous');
+        for ( let i = 0; i < largeRel.length; i++) {
+            largeRel[i].style.display = 'block'
+        }
+
+        let others = document.querySelectorAll('.smallReligous, .smallLiberal, .largeLiberal');
+        for ( let i = 0; i < others.length; i++) {
+            others[i].style.display = 'none'
+        }
+    }
+}
+
+
 // Question1
 // Show 2-year colleges and hide the others
 document.getElementById('two').onchange = function() {
@@ -122,7 +236,8 @@ document.getElementById('small').onchange = function(){
     const q3 = document.getElementById('q3')
     q3.style.display = 'block'
 
-
+    validateSPU()
+    validateSPR()
 }
 
 // Show 4-year Large colleges
@@ -143,6 +258,8 @@ document.getElementById('large').onchange = function(){
     const q3 = document.getElementById('q3')
     q3.style.display = 'block'
 
+    validateLPR()
+    validateLPU()
 }
 
 // Question3
@@ -173,8 +290,8 @@ document.getElementById('private').onchange = function(){
         });
     });
     
-
-
+    validateLPR()
+    validateSPR()
 }
 
 // Show 4-year Public colleges
@@ -207,7 +324,8 @@ document.getElementById('public').onchange = function(){
     const q4 = document.getElementById('q4')
     q4.style.display = 'none'
 
-
+    validateLPU()
+    validateSPU()
 }
 
 // Question4
@@ -227,6 +345,9 @@ document.getElementById('liberalArts').onchange = function(){
     for ( let i = 0; i < publicColl.length; i++) {
         publicColl[i].style.display = 'none'
     }
+
+    validateSPRLA()
+    validateLPRLA()
 }
 
 // Show Religous Private Colleges
@@ -245,6 +366,9 @@ document.getElementById('religous').onchange = function(){
     for ( let i = 0; i < publicColl.length; i++) {
         publicColl[i].style.display = 'none'
     }
+
+    validateSPRRL()
+    validateLPRRL()
 }
 
 

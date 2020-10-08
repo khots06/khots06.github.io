@@ -9,7 +9,7 @@
     <body>
         
         <header>
-            <h1>Kentucky College Selector</h1>
+            <h1 class="title">Kentucky College Selector</h1>
             <img alt="Kentucky" id="myPicture">
         </header>
 
@@ -22,7 +22,7 @@
         <div class="questions">
 
             <div class="question">
-                <p>Would you like to attend a 2-year college or a 4-year college?</p>
+                <p>2-year college or a 4-year college?</p>
                 <input type="radio" name="years" value="2year" id="two">
                 <label for="two">2-year College</label>
                 <input type="radio" name="years" value="4year" id="four">
@@ -30,7 +30,7 @@
             </div>
 
             <div class="question" id="q2">
-                <p>Would you prefer to attend a small college or large college?</p>
+                <p>Small college or large college?</p>
                 <input type="radio" name="size" value="small" id="small">
                 <label for="small">Small</label>
                 <input type="radio" name="size" value="large" id="large">
@@ -38,7 +38,7 @@
             </div>
 
             <div class="question" id="q3">
-                <p>Would you prefer to attend a Private or Public institution?</p>
+                <p>Private or Public institution?</p>
                 <input type="radio" name="privatePublic" value="private" id="private">
                 <label for="private">Private</label>
                 <input type="radio" name="privatePublic" value="public" id="public">
@@ -46,7 +46,7 @@
             </div>
 
             <div class="question" id="q4">
-                <p>Would you prefer to attend a liberal arts institution or a religous institution?</p>
+                <p>Liberal Arts or Religous?</p>
                 <input type="radio" name="type" value="liberalArts" id="liberalArts">
                 <label for="liberalArts">Liberal Arts</label>
                 <input type="radio" name="type" value="religous" id="religous">
@@ -58,8 +58,8 @@
         <a href="#" id="clear-button">Reset</a>
 
         <div class="colleges">
-            <ul class="private liberalArts small fourYear">
-                <li>4-Year, Small, Private, Liberal Arts Colleges</li>
+            <ul class="private liberalArts small fourYear smallPrivate smallLiberal">
+                <li class="collHeader">4-Year, Small, Private, Liberal Arts Colleges</li>
                 <li>Alice Lloyd College</li>
                 <li>Centre College</li>
                 <li>Georgetown College</li>
@@ -68,8 +68,8 @@
                 <li>Transylvania University</li>
                 <li>Union College</li>
             </ul>
-            <ul class="private liberalArts large fourYear">
-                <li>4-Year, Large, Private, Liberal Arts Colleges</li>
+            <ul class="private liberalArts large fourYear largePrivate largeLiberal">
+                <li class="collHeader">4-Year, Large, Private, Liberal Arts Colleges</li>
                 <li>Asbury University</li>
                 <li>Berea College</li>
                 <li>Lindsey Wilson College</li>
@@ -77,8 +77,8 @@
                 <li>University of Cumberlands</li>
                 <li>University of Pikeville</li>
             </ul>
-            <ul class="private religous small fourYear">
-                <li>4-Year, Small, Private, Religous Colleges</li>
+            <ul class="private religous small fourYear smallPrivate smallReligous">
+                <li class="collHeader">4-Year, Small, Private, Religous Colleges</li>
                 <li>Asbury Theological Seminary</li>
                 <li>Brescia University</li>
                 <li>Clear Creek Baptist Bible College</li>
@@ -88,15 +88,15 @@
                 <li>Louisville Presbyterian Theological Seminary</li>
                 <li>Simmons College of Kentucky</li>
             </ul>
-            <ul class="private religous large fourYear">
-                <li>4-Year, Large, Private, Religous Colleges</li>
+            <ul class="private religous large fourYear largePrivate largeReligous">
+                <li class="collHeader">4-Year, Large, Private, Religous Colleges</li>
                 <li>Bellarmine University</li>
                 <li>Campbellsville University</li>
                 <li>Southern Baptist Theological Seminary</li>
                 <li>Spalding University</li>
             </ul>
             <ul class="twoYear">
-                <li>Two Year Colleges</li>
+                <li class="collHeader">Two Year Colleges</li>
                 <li>Ashland Community and Technical College</li>
                 <li>Big Sandy Community and Technical College</li>
                 <li>Bluegrass Community and Technical College</li>
@@ -114,14 +114,14 @@
                 <li>Southeast Kentucky Community and Technical College</li>
                 <li>West Kentucky Community and Technical College</li>
             </ul>
-            <ul class="public small fourYear">
-                <li>4-Year, Small, Public Colleges</li>
+            <ul class="public small fourYear smallPublic">
+                <li class="collHeader">4-Year, Small, Public Colleges</li>
                 <li>Kentucky State University</li>
                 <li>Morehead State University</li>
                 <li>Murray State University</li>
             </ul>
-            <ul class="public large fourYear">
-                <li>4-Year, Large, Public Colleges</li>
+            <ul class="public large fourYear largePublic">
+                <li class="collHeader">4-Year, Large, Public Colleges</li>
                 <li>Eastern Kentucky University</li>
                 <li>Northern Kentucky University</li>
                 <li>University of Kentucky</li>
