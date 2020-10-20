@@ -389,13 +389,21 @@ document.getElementById('clear-button').addEventListener('click', function() {
         }
 });
 
-//onload
-    document.getElementsByTagName('body')[0].addEventListener('load', function() {
-        ["two", "four", "public", "private", "small", "large", "liberalArts", "religous"].forEach(function(id) {
-            document.getElementById(id).checked = false;
-        });
-    
-        ["q2", "q3", "q4"].forEach(function(id) {
-            document.getElementById(id).style.display = "none"
-        })
-    })
+document.body.onload = function() {
+
+            choosePic();
+
+            ["two", "four", "public", "private", "small", "large", "liberalArts", "religous"].forEach(function(id) {
+                document.getElementById(id).checked = false;
+            });
+        
+            ["q2", "q3", "q4"].forEach(function(id) {
+                document.getElementById(id).style.display = "none"
+            })
+
+            let clearColleges = document.getElementsByClassName("college");
+            for ( let i = 0; i < clearColleges.length; i++) {
+            clearColleges[i].style.display = "none"
+            }
+        }
+
