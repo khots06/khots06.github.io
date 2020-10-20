@@ -10,124 +10,130 @@
         
         <header>
             <h1 class="title">Kentucky College Selector</h1>
-            <img alt="Kentucky" id="myPicture">
-        </header>
+            <h3 class="subtitle">Find the college that's best fit for you!</h3>
+            <div class="container">
+                <img alt="Kentucky" id="myPicture">
+                <p class="heading">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate libero ut leo lobortis tempor. Mauris aliquet lectus ut viverra volutpat. Phasellus ac pulvinar velit. Ut blandit sed orci nec venenatis. Nulla euismod mauris mauris, et dapibus leo mollis non. Nulla tempor nunc a elit faucibus volutpat sed ac massa.
+                </p>
+            </div>
+    </header>
 
-        <div class="heading">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate libero ut leo lobortis tempor. Mauris aliquet lectus ut viverra volutpat. Phasellus ac pulvinar velit. Ut blandit sed orci nec venenatis. Nulla euismod mauris mauris, et dapibus leo mollis non. Nulla tempor nunc a elit faucibus volutpat sed ac massa. </p>
-        </div>
+        <div class="background">
+            <div class="questions">
 
+                <div class="question">
+                    <p>2-year college or a 4-year college?</p>
+                    <input type="radio" name="years" value="2year" id="two">
+                    <label for="two">2-year College</label>
+                    <input type="radio" name="years" value="4year" id="four">
+                    <label for="four">4-year College</label>
+                </div>
 
+                <div class="question" id="q2">
+                    <p>Small college or large college?</p>
+                    <input type="radio" name="size" value="small" id="small">
+                    <label for="small">Small</label>
+                    <input type="radio" name="size" value="large" id="large">
+                    <label for="large">Large</label>
+                </div>
 
-        <div class="questions">
+                <div class="question" id="q3">
+                    <p>Private or Public institution?</p>
+                    <input type="radio" name="privatePublic" value="private" id="private">
+                    <label for="private">Private</label>
+                    <input type="radio" name="privatePublic" value="public" id="public">
+                    <label for="public">Public</label>
+                </div>
 
-            <div class="question">
-                <p>2-year college or a 4-year college?</p>
-                <input type="radio" name="years" value="2year" id="two">
-                <label for="two">2-year College</label>
-                <input type="radio" name="years" value="4year" id="four">
-                <label for="four">4-year College</label>
+                <div class="question" id="q4">
+                    <p>Liberal Arts or Religous?</p>
+                    <input type="radio" name="type" value="liberalArts" id="liberalArts">
+                    <label for="liberalArts">Liberal Arts</label>
+                    <input type="radio" name="type" value="religous" id="religous">
+                    <label for="religous">Religous</label>
+                </div>
+
             </div>
 
-            <div class="question" id="q2">
-                <p>Small college or large college?</p>
-                <input type="radio" name="size" value="small" id="small">
-                <label for="small">Small</label>
-                <input type="radio" name="size" value="large" id="large">
-                <label for="large">Large</label>
+            <a href="#" id="clear-button">Reset</a>
+
+            <div class="colleges">
+
+                <ul class="college twoYear">
+                    <li class="collHeader">Two Year Colleges</li>
+                    <li>Ashland Community and Technical College</li>
+                    <li>Big Sandy Community and Technical College</li>
+                    <li>Bluegrass Community and Technical College</li>
+                    <li>Elizabethtown Community and Technical College</li>
+                    <li>Gateway Community and Technical College</li>
+                    <li>Hazard Community and Technical College</li>
+                    <li>Henderson Community College</li>
+                    <li>Hopkinsville Community College</li>
+                    <li>Jefferson Community and Technical College</li>
+                    <li>Madisonville Community College</li>
+                    <li>Maysville Community and Technical College</li>
+                    <li>Owensboro Community and Technical College</li>
+                    <li>Somerset Community College</li>
+                    <li>Southcentral Kentucky Community and Technical College</li>
+                    <li>Southeast Kentucky Community and Technical College</li>
+                    <li>West Kentucky Community and Technical College</li>
+                </ul>
+
+                <ul class="college private liberalArts small fourYear smallPrivate smallLiberal">
+                    <li class="collHeader">4-Year, Small, Private, Liberal Arts Colleges</li>
+                    <li>Alice Lloyd College</li>
+                    <li>Centre College</li>
+                    <li>Georgetown College</li>
+                    <li>Kentucky Wesleyn College</li>
+                    <li>Midway University</li>
+                    <li>Transylvania University</li>
+                    <li>Union College</li>
+                </ul>
+                
+                <ul class="college private liberalArts large fourYear largePrivate largeLiberal">
+                    <li class="collHeader">4-Year, Large, Private, Liberal Arts Colleges</li>
+                    <li>Asbury University</li>
+                    <li>Berea College</li>
+                    <li>Lindsey Wilson College</li>
+                    <li>Thomas More University</li>
+                    <li>University of Cumberlands</li>
+                    <li>University of Pikeville</li>
+                </ul>
+                <ul class="college private religous small fourYear smallPrivate smallReligous">
+                    <li class="collHeader">4-Year, Small, Private, Religous Colleges</li>
+                    <li>Asbury Theological Seminary</li>
+                    <li>Brescia University</li>
+                    <li>Clear Creek Baptist Bible College</li>
+                    <li>Kentucky Christian University</li>
+                    <li>Kentucky Mountain Bible College</li>
+                    <li>Lexington Theological Seminary</li>
+                    <li>Louisville Presbyterian Theological Seminary</li>
+                    <li>Simmons College of Kentucky</li>
+                </ul>
+                <ul class="college private religous large fourYear largePrivate largeReligous">
+                    <li class="collHeader">4-Year, Large, Private, Religous Colleges</li>
+                    <li>Bellarmine University</li>
+                    <li>Campbellsville University</li>
+                    <li>Southern Baptist Theological Seminary</li>
+                    <li>Spalding University</li>
+                </ul>
+
+                <ul class="college public small fourYear smallPublic">
+                    <li class="collHeader">4-Year, Small, Public Colleges</li>
+                    <li>Kentucky State University</li>
+                    <li>Morehead State University</li>
+                    <li>Murray State University</li>
+                </ul>
+                <ul class="college public large fourYear largePublic">
+                    <li class="collHeader">4-Year, Large, Public Colleges</li>
+                    <li>Eastern Kentucky University</li>
+                    <li>Northern Kentucky University</li>
+                    <li>University of Kentucky</li>
+                    <li>University of Louisville</li>
+                    <li>Western Kentucky University</li>
+                </ul>
             </div>
-
-            <div class="question" id="q3">
-                <p>Private or Public institution?</p>
-                <input type="radio" name="privatePublic" value="private" id="private">
-                <label for="private">Private</label>
-                <input type="radio" name="privatePublic" value="public" id="public">
-                <label for="public">Public</label>
-            </div>
-
-            <div class="question" id="q4">
-                <p>Liberal Arts or Religous?</p>
-                <input type="radio" name="type" value="liberalArts" id="liberalArts">
-                <label for="liberalArts">Liberal Arts</label>
-                <input type="radio" name="type" value="religous" id="religous">
-                <label for="religous">Religous</label>
-            </div>
-
-        </div>
-
-        <a href="#" id="clear-button">Reset</a>
-
-        <div class="colleges">
-            <ul class="private liberalArts small fourYear smallPrivate smallLiberal">
-                <li class="collHeader">4-Year, Small, Private, Liberal Arts Colleges</li>
-                <li>Alice Lloyd College</li>
-                <li>Centre College</li>
-                <li>Georgetown College</li>
-                <li>Kentucky Wesleyn College</li>
-                <li>Midway University</li>
-                <li>Transylvania University</li>
-                <li>Union College</li>
-            </ul>
-            <ul class="private liberalArts large fourYear largePrivate largeLiberal">
-                <li class="collHeader">4-Year, Large, Private, Liberal Arts Colleges</li>
-                <li>Asbury University</li>
-                <li>Berea College</li>
-                <li>Lindsey Wilson College</li>
-                <li>Thomas More University</li>
-                <li>University of Cumberlands</li>
-                <li>University of Pikeville</li>
-            </ul>
-            <ul class="private religous small fourYear smallPrivate smallReligous">
-                <li class="collHeader">4-Year, Small, Private, Religous Colleges</li>
-                <li>Asbury Theological Seminary</li>
-                <li>Brescia University</li>
-                <li>Clear Creek Baptist Bible College</li>
-                <li>Kentucky Christian University</li>
-                <li>Kentucky Mountain Bible College</li>
-                <li>Lexington Theological Seminary</li>
-                <li>Louisville Presbyterian Theological Seminary</li>
-                <li>Simmons College of Kentucky</li>
-            </ul>
-            <ul class="private religous large fourYear largePrivate largeReligous">
-                <li class="collHeader">4-Year, Large, Private, Religous Colleges</li>
-                <li>Bellarmine University</li>
-                <li>Campbellsville University</li>
-                <li>Southern Baptist Theological Seminary</li>
-                <li>Spalding University</li>
-            </ul>
-            <ul class="twoYear">
-                <li class="collHeader">Two Year Colleges</li>
-                <li>Ashland Community and Technical College</li>
-                <li>Big Sandy Community and Technical College</li>
-                <li>Bluegrass Community and Technical College</li>
-                <li>Elizabethtown Community and Technical College</li>
-                <li>Gateway Community and Technical College</li>
-                <li>Hazard Community and Technical College</li>
-                <li>Henderson Community College</li>
-                <li>Hopkinsville Community College</li>
-                <li>Jefferson Community and Technical College</li>
-                <li>Madisonville Community College</li>
-                <li>Maysville Community and Technical College</li>
-                <li>Owensboro Community and Technical College</li>
-                <li>Somerset Community College</li>
-                <li>Southcentral Kentucky Community and Technical College</li>
-                <li>Southeast Kentucky Community and Technical College</li>
-                <li>West Kentucky Community and Technical College</li>
-            </ul>
-            <ul class="public small fourYear smallPublic">
-                <li class="collHeader">4-Year, Small, Public Colleges</li>
-                <li>Kentucky State University</li>
-                <li>Morehead State University</li>
-                <li>Murray State University</li>
-            </ul>
-            <ul class="public large fourYear largePublic">
-                <li class="collHeader">4-Year, Large, Public Colleges</li>
-                <li>Eastern Kentucky University</li>
-                <li>Northern Kentucky University</li>
-                <li>University of Kentucky</li>
-                <li>University of Louisville</li>
-                <li>Western Kentucky University</li>
-            </ul>
         </div>
 
 

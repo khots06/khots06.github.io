@@ -1,9 +1,14 @@
-.title {
+.title,
+.subtitle {
     text-align: center;
 }
 
+.subtitle {
+    margin-top: 0;
+}
+
 #myPicture {
-    max-width: 75%;
+    max-width: 45%;
     max-height: 300px;
     display: block;
     margin-left: auto;
@@ -15,9 +20,23 @@
     margin-right: 20%;
 }
 
+
 .question {
     text-align: center;
 }
+
+#clear-button {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+/* .background {
+    background-image: url("../images/campus.jpg");
+    opacity: 0.5;
+} */
+
+
 
 #q2,
 #q3,
@@ -28,4 +47,123 @@
 .collHeader {
     font-weight: bold;
     list-style-type: none;
+}
+
+h1.title {
+    background-color: #23a7ff;
+    margin-top: 0;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+body {
+    padding-top: 75px;
+}
+
+.college {
+    background-color: #cde6fa;
+    border-style: groove;
+    border-color: #ffae89;
+    border-width: thick;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 3px;
+}
+
+li:nth-child(even) {
+    background: #ffae89;
+}
+
+li {
+    padding:10px;
+}
+
+
+/******************* 
+MEDIA QUERIES
+******************/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #ff7023;
+        padding: 10px;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    #myPicture {
+        flex: 1 250px;
+        flex-grow: 1;
+        max-width: 45%;
+        margin-left: 5%;
+    }
+
+    .heading {
+        flex: 1 250px;
+        max-width: 45%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .colleges,
+    .questions {
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .question {
+        margin-left: 50px;
+    }
+
+}
+
+
+
+@media (min-width: 1025px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #ff7023;
+        padding: 10px;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    #myPicture {
+        flex: 1 250px;
+        flex-grow: 1;
+        max-width: 45%;
+        margin-left: 5%;
+    }
+
+    .heading {
+        flex: 1 250px;
+        max-width: 45%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .colleges,
+    .questions {
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    .question {
+        margin-left: 50px;
+    }
+
 }
