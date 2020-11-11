@@ -67,6 +67,7 @@ function publicButton() {
     }
 }
 
+// If Large and Public are both checked, show those and hide everything else
 function validateLPU() {
     if ( document.getElementById('large').checked == true && document.getElementById('public').checked == true ) {
         let largePub = document.getElementsByClassName('largePublic');
@@ -81,6 +82,7 @@ function validateLPU() {
     }
 }
 
+// If Large and Public are checked, show those and hide everything else
 function validateLPR() {
     if ( document.getElementById('large').checked == true && document.getElementById('private').checked == true ) {
         let largePri = document.getElementsByClassName('largePrivate');
@@ -96,6 +98,7 @@ function validateLPR() {
     }
 }
 
+// If Small and Public are checked, show those and hide everything else
 function validateSPU() {
     if ( document.getElementById('small').checked == true && document.getElementById('public').checked == true ) {
         let smallPub = document.getElementsByClassName('smallPublic');
@@ -110,6 +113,7 @@ function validateSPU() {
     }
 }
 
+// If Small and Private are checked, show those and hide everything else
 function validateSPR() {
     if ( document.getElementById('small').checked == true && document.getElementById('private').checked == true ) {
         let smallPri = document.getElementsByClassName('smallPrivate');
@@ -124,6 +128,7 @@ function validateSPR() {
     }
 }
 
+// If Small, Private, and Liberal Arts are checked, show those and hide everything else
 function validateSPRLA() {
     if ( document.getElementById('small').checked == true && document.getElementById('private').checked == true && document.getElementById('liberalArts').checked == true) {
         let smallLib = document.getElementsByClassName('smallLiberal');
@@ -138,6 +143,7 @@ function validateSPRLA() {
     }
 }
 
+// If Small, Private, and Religous are checked, show those and hide everything else
 function validateSPRRL() {
     if ( document.getElementById('small').checked == true && document.getElementById('private').checked == true && document.getElementById('religous').checked == true) {
         let smallRel = document.getElementsByClassName('smallReligous');
@@ -152,6 +158,7 @@ function validateSPRRL() {
     }
 }
 
+// If Large, Private, and Liberal Arts are checked, show those and hide everything else
 function validateLPRLA() {
     if ( document.getElementById('large').checked == true && document.getElementById('private').checked == true && document.getElementById('liberalArts').checked == true) {
         let largeLib = document.getElementsByClassName('largeLiberal');
@@ -166,6 +173,7 @@ function validateLPRLA() {
     }
 }
 
+// If Large, Private, and Religous are checked, show those and hide everything else
 function validateLPRRL() {
     if ( document.getElementById('large').checked == true && document.getElementById('private').checked == true && document.getElementById('religous').checked == true) {
         let largeRel = document.getElementsByClassName('largeReligous');
@@ -389,6 +397,7 @@ document.getElementById('clear-button').addEventListener('click', function() {
         }
 });
 
+// Resetting on load
 document.body.onload = function() {
 
             choosePic();
